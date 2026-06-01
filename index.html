@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>The Heenaaa Experience ✨</title>
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+
+    <div class="stars"></div>
+
+    <div class="cursor-glow"></div>
+
+    <!-- Progress -->
+
+    <div class="progress-wrapper">
+
+        <div class="progress-bar"
+            id="progressBar"></div>
+
+    </div>
+
+    <!-- Screen 1 -->
+
+    <section class="screen active"
+        id="screen1">
+
+        <div class="content">
+
+            <h1>
+                Hey Heenaaa ✨
+            </h1>
+
+            <p>
+                This isn't a confession....
+            </p>
+
+            <p>
+                It's simply a collection of thoughts
+                I never knew how to say properly.
+            </p>
+
+            <button class="next-btn"
+                data-next="screen2">
+                Begin Journey 🌸
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 2 -->
+
+    <section class="screen"
+        id="screen2">
+
+        <div class="content">
+
+            <h2>
+                Curiosity Activated 💫
+            </h2>
+
+            <p>
+                Click the glowing orb below.
+            </p>
+
+            <div class="orb"
+                id="orb"></div>
+
+            <div class="hidden-message"
+                id="orbMessage">
+
+                Creativity usually starts with inspiration...
+
+                <br><br>
+
+                <button class="next-btn"
+                    data-next="screen3">
+
+                    Continue ✨
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 3 -->
+
+    <section class="screen"
+        id="screen3">
+
+        <div class="content">
+
+            <h2>
+                Random Discoveries 🌷
+            </h2>
+
+            <div class="fact-container">
+
+                <div class="fact-card">
+                    Some people make ordinary days feel special.
+                </div>
+
+                <div class="fact-card">
+                    A smile can completely change someone's mood.
+                </div>
+
+                <div class="fact-card">
+                    Kindness is surprisingly memorable.
+                </div>
+
+            </div>
+
+            <button class="next-btn"
+                data-next="screen4">
+                Next Chapter →
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 4 -->
+
+    <section class="screen"
+        id="screen4">
+
+        <div class="content">
+
+            <h2>
+                Memory Wall 📸
+            </h2>
+
+            <div class="memory-grid">
+
+                <div class="memory-card">
+
+                    <div class="front">
+                        Click Me
+                    </div>
+
+                    <div class="back">
+                        Some moments stay longer than expected.
+                    </div>
+
+                </div>
+
+                <div class="memory-card">
+
+                    <div class="front">
+                        Click Me
+                    </div>
+
+                    <div class="back">
+                        Unexpected conversations are the best.
+                    </div>
+
+                </div>
+
+                <div class="memory-card">
+
+                    <div class="front">
+                        Click Me
+                    </div>
+
+                    <div class="back">
+                        Good vibes are hard to forget.
+                        Not every meaningful connection
+                        needs a title to be important.
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="next-btn"
+                data-next="screen5">
+                Unlock Secret 🔐
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 5 -->
+
+    <section class="screen"
+        id="screen5">
+
+        <div class="content">
+
+            <h2>
+                Secret Vault 🔐
+            </h2>
+
+            <p>
+                Enter the secret code.
+            </p>
+
+            <input type="text"
+                id="secretInput"
+                placeholder="Enter Code">
+
+            <button id="checkCode">
+                Unlock
+            </button>
+
+            <p id="vaultResult"></p>
+
+            <button class="next-btn"
+                data-next="screen6">
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 6 -->
+
+    <section class="screen"
+        id="screen6">
+
+        <div class="content">
+
+            <h2>
+                Quick Quiz ☕
+            </h2>
+
+            <p>
+                Choose one:
+            </p>
+
+            <div class="quiz-options">
+
+                <button class="quiz-btn">
+                    Tea
+                </button>
+
+                <button class="quiz-btn">
+                    Coffee
+                </button>
+
+                <button class="quiz-btn">
+                    Both
+                </button>
+
+            </div>
+
+            <p id="quizResult"></p>
+
+            <button class="next-btn"
+                data-next="screen7">
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 7 -->
+
+    <section class="screen"
+        id="screen7">
+
+        <div class="content">
+
+            <h2>
+                Achievements Unlocked 🏆
+            </h2>
+
+            <div class="achievement">
+
+                🏆 Smile Generator
+
+            </div>
+
+            <div class="achievement">
+
+                🏆 Positive Energy
+
+            </div>
+
+            <div class="achievement">
+
+                🏆 Main Character Vibes
+
+            </div>
+
+            <button class="next-btn"
+                data-next="screen8">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 8 -->
+
+    <section class="screen"
+        id="screen8">
+
+        <div class="content">
+
+            <h2>
+                Developer Mode 💻
+            </h2>
+
+            <div class="terminal"
+                id="terminal">
+
+            </div>
+
+            <button class="next-btn"
+                data-next="screen9">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 9 -->
+
+    <section class="screen"
+        id="screen9">
+
+        <div class="content">
+
+            <h2>
+                Constellation ✨
+            </h2>
+
+            <p>
+                Click the stars.
+            </p>
+
+            <div class="constellation">
+
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+
+            </div>
+
+            <h3 id="constellationText"></h3>
+
+            <button class="next-btn"
+                data-next="screen10">
+
+                Final Chapter →
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 10 -->
+
+    <section class="screen"
+        id="screen10">
+
+        <div class="content final-screen">
+
+            <h1>
+                🌸 Dear Heenaaa 🌸
+            </h1>
+
+            <p>
+                I don't expect anything from this.
+            </p>
+
+            <p>
+                I don't need an answer.
+            </p>
+            
+            <p>
+                I just wanted you to know that
+meeting you added something beautiful
+to my everyday life.
+            </p>
+
+            <p>
+                You probably don't realize it,
+but you've inspired more smiles,
+more thoughts, and more creativity
+than you know.
+ Thank you for being one of those rare people.
+ Also Thank you for being you.
+            </p>
+
+            <button id="restartBtn">
+                Restart Journey ✨
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
